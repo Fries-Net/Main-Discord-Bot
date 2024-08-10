@@ -10,7 +10,6 @@ const formatMotd = (motd) => {
     return motd;
 };
 
-
 const getServerDataAndPlayerList = async () => {
     try {
         let data;
@@ -19,7 +18,6 @@ const getServerDataAndPlayerList = async () => {
         } else {
             data = await statusBedrock(mcserver.ip, mcserver.port);
         }
-
         const isOnline = data.online;
         const playerListArray = isOnline && data.players.sample ? data.players.sample.map(player => player.name) : [];
         return { data, playerListArray, isOnline };
@@ -45,7 +43,6 @@ module.exports = {
         } else {
             description = 'Server is offline.';
         }
-
         const statusEmbed = new EmbedBuilder()
             .setTitle('Minecraft Server: johnfries.net')
             .setThumbnail('https://cdn.discordapp.com/icons/1271431711389122663/2c50b85387919da5d541e51699d16d32.webp?size=96')
