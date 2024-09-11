@@ -1,9 +1,10 @@
 {
-  "name": "generalpurpose-discord-bot",
+  "name": "friesnet-bot",
   "version": "1.0.0",
-  "description": "basic discord bot with simple commands",
+  "description": "bot running friesnet discord server",
   "dependencies": {
     "discord.js": "^14.14.1",
+    "friesnet-bot": "file:",
     "node-mcstatus": "^1.2.1"
   },
   "main": "index.js",
