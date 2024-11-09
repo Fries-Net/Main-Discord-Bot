@@ -44,7 +44,7 @@ module.exports = {
             description = 'Server is offline.';
         }
         const statusEmbed = new EmbedBuilder()
-            .setTitle('Minecraft Server: johnfries.net')
+            .setTitle(`Minecraft Server: ${mcserver.name}`)
             .setThumbnail('https://cdn.discordapp.com/icons/1271431711389122663/2c50b85387919da5d541e51699d16d32.webp?size=96')
             .setDescription(description)
             .setColor(green)
