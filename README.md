@@ -57,15 +57,22 @@ Ticket
     "clientId": "", This is the bots client ID found <a href="https://discord.com/developers/applications/">here</a> under OAuth2 <br>
     "memberID": "1271432007616041012", this is for the auto roles. This is the role id for the role you would like to give to a new member when they join.<br>
 	  "guildId": "" This is the parent servers ID. This is currently how commands are distrabuted to the server and is required as I'm not creating global commands due to the bot only being in one server. <br>
-        "mcserver": {
-        "ip": "johnfries.net",
-        "port": 25565,
-        "type": "java",
-        "name": "FriesNet",
-        "version": "1.9.x - 1.21",
-        "icon": "https://cdn.discordapp.com/icons/1271431711389122663/2c50b85387919da5d541e51699d16d32.webp?size=96",
-        "site": "https://friesnet.net"
-    }
+        "mcserver": { <br>
+        "ip": "johnfries.net",<br>
+        "port": 25565,<br>
+        "type": "java",<br>
+        "name": "FriesNet",<br>
+        "version": "1.9.x - 1.21",<br>
+        "icon": "https://cdn.discordapp.com/icons/1271431711389122663/2c50b85387919da5d541e51699d16d32.webp?size=96",<br>
+        "site": "https://friesnet.net"<br>
+    },
+        "mysql": { <br>
+        "host": "localhost",<br>
+        "user": "root",<br>
+        "password": "root",<br>
+        "database": "discord_bot",<br>
+        "insecureAuth": true<br>
+    }<br>
     <br>
     this is for the the /ip command and displays the status of the server.
 
