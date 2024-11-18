@@ -1,4 +1,4 @@
-const { memberID } = require('../config.json');
+const { memberID, welcomeID } = require('../config.json');
 
 module.exports = {
     name: 'guildMemberAdd',
@@ -11,13 +11,8 @@ module.exports = {
             return;
         }
         member.roles.add(role)
-        const channelID = "1271431712383045703";
+        const channelID = welcomeID;
         const channel = guild.channels.cache.get(channelID);
-        try{
             channel.send(`Welcome to the server, ${member}!`);
-        }
-        catch (error){
-            console.log(error);
-        }
     },
 };
